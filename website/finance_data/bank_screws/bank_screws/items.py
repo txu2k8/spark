@@ -11,5 +11,5 @@ from scrapy_djangoitem import DjangoItem
 class BankScrewsItem(DjangoItem):  # scrapy.Item
     # define the fields for your item here like:
     # name = scrapy.Field()
-    django_model = models.IndexValuation  # 注入django项目的固定写法，必须起名为django_model=django中models.IndexValuation表
+    django_model = models.BankScrewsIndexValuation  # 注入django项目的固定写法，必须起名为django_model=django中models.IndexValuation表
     pass

@@ -1,0 +1,44 @@
+{% extends 'home_page/index.html' %}
+
+{% block head %}
+  {% load static %}
+{% endblock %}
+
+{% block title %}
+<title>Build Index Page</title>
+{% endblock %}
+
+{% block sidebar %}
+    <!-- 侧边栏部分 -->
+    <div class="topic-sidebar-wrap">
+      <h3 class="space-title kodo">
+        <a href="#">定投十年</a>
+        <a class="tool folder" arial-value="true" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="展开所有菜单"><i class="fa fa-angle-right"></i></a>
+      </h3>
+      <div class="doctree">
+        <ul><li class="cate-tools branch closed"><a class="node-title category" href="/finance/bank_screws/index_valuation">今日指数估值</a></li></ul>
+        <ul><li class="cate-tools branch closed"><a class="node-title category" href="/finance/bank_screws/index_valuation">历史指数估值</a></li></ul>
+      </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <!-- 正文部分 -->
+    <div class="topic-content-wrap">
+      <div class="container">
+        <div class="article-content">
+          <div class="topic-title">
+            <div class="doctree">
+              <a href="/finance">投资理财</a> &gt; <span>银行螺丝钉</span>
+            </div>
+            <h2><span>TODO</span></h2>
+            <p class="topic-meta">Update：2021-01-28 11:52:03</p>
+          </div>
+
+          <div class="topic-detail">
+<!--            <p>TODO</p>-->
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

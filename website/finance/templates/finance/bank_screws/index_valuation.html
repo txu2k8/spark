@@ -1,0 +1,50 @@
+{% extends 'finance/bank_screws/index.html' %}
+
+{% block head %}
+  {% load static %}
+{% endblock %}
+
+{% block title %}
+<title>Builds Branches Page</title>
+{% endblock %}
+
+{% block content %}
+    <!-- 正文部分 -->
+    <div class="topic-content-wrap">
+      <div class="container">
+        <div class="article-content">
+          <div class="topic-title">
+            <div class="doctree">
+              <a href="/finance">投资理财</a> &gt; <span>银行螺丝钉</span> &gt; <span>Project</span>
+            </div>
+            <h2><span>to do</span></h2>
+            <ul class="object-tools">
+              <li>
+                <a href="/finance/bank_screws/latest/refresh/" class="addlink">Refresh</a>
+              </li>
+            </ul>
+            <p class="topic-meta">Update：2021-01-28 11:52:03</p>
+          </div>
+
+          <div class="topic-detail">
+            <table width="100%">
+              <thead>
+                <tr>
+                  <th>Project </th>
+                </tr>
+              </thead>
+              {% if project_list %}
+                {% for project in project_list %}
+                  <tbody>
+                    <tr>
+                      <td><a href="{% url 'finance:bank_screws' index_valuation %}"><font size="2">{{ project }}</font></a></td>
+                    </tr>
+                  </tbody>
+                {% endfor %}
+              {% endif %}
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

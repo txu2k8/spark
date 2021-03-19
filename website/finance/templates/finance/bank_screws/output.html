@@ -1,0 +1,32 @@
+{% extends 'finance/bank_screws/index.html' %}
+
+{% block head %}
+  {% load static %}
+{% endblock %}
+
+{% block title %}
+<title>Output Page</title>
+{% endblock %}
+
+{% block content %}
+    <!-- 正文部分 -->
+    <div class="topic-content-wrap">
+      <div class="container">
+        <div class="article-content">
+          <div class="topic-title">
+            <div class="doctree">
+              <a href="/finance">投资理财</a> &gt; <span>银行螺丝钉</span> &gt; <span>Output</span>
+            </div>
+            <h2><span>Output</span></h2>
+            <p class="topic-meta">Update：2021-01-28 11:52:03</p>
+          </div>
+
+          <div class="topic-detail">
+            {% if output %}
+              <p>{{ output }}</p>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}
