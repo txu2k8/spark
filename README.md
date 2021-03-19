@@ -1,2 +1,2 @@
 # spark
-A Django web site with blogs,spiders,tutorials,books,etc.
+A django web site with blogs,spiders,tutorials,books,etc.
